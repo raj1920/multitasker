@@ -5,7 +5,8 @@ import {Link as LinkS} from 'react-scroll';
 import { Container } from '../../globalstyle';
 
 export const Nav = styled.nav`
-  background: #101522;
+  background: ${({scrollNav})=>(scrollNav ? '#101522' :
+  'Transparent')};
   height: 80px;
   display: flex;
   justify-content: center;

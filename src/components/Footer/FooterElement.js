@@ -58,3 +58,47 @@ font-size: 14px;
 }
 
 `;
+export const SocialMedia = styled.section `
+max-width: 1000px;
+width: 100%;
+`;
+export const SocialMediaWrap = styled.div `
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1100px;
+margin: 40px auto 0 auto;
+
+@media screen and (mac-width: 820px){
+    flec-direction: column;
+}
+`;
+export const SocialLogo = styled(Link) `
+color: #fff;
+justify-self: start;
+cursor: pointer;
+text-decotation: none;
+font-size: 1.5rem;
+display: flex;
+align-items: center;
+margin-bottom: 16px;
+font-weight: bold;
+`;
+
+export const WebsiteRIghts = styled.small `
+color: #fff;
+margin-bottom: 16px;
+`;
+
+export const SocialIcons = styled.div `
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 240px;
+
+`;
+
+export const SocialIconLink = styled.a     `
+color: #fff;
+font-size: 24px;
+`

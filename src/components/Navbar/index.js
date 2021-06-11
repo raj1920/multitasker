@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Button } from '../../globalstyle';
+import { animateScroll as scroll } from 'react-scroll';
 import {
   Nav,
   NavbarContainer,
@@ -15,7 +16,21 @@ import {
   NavBtnLink
 } from './NavbarElement';
 
-function Navbar() {
+
+
+  const Navbar = ({toggle}) => {
+    const [scrollNav, setScrollNav] = useState(false)
+    const changeNav = ()=> {
+      if(window.scrollY >=80) {
+        setScrollNav(true)
+      }else{
+        setScrollNav(false)
+      }
+    }
+    useEffect( () =>{
+      window.addEventListener('scroll',changeNav)
+    }, [])
+  
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -35,13 +50,15 @@ function Navbar() {
   }, []);
 
   window.addEventListener('resize', showButton);
-
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  }
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
-        <Nav>
+        <Nav scrollNav= {scrollNav}>
           <NavbarContainer>
-            <NavLogo to='/' onClick={closeMobileMenu}>
+            <NavLogo to='/' onClick={closeMobileMenu} onClick= {toggleHome}>
               <NavIcon />
               Multitasker
             </NavLogo>
