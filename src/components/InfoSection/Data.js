@@ -27,7 +27,7 @@ export const homeObjTwo = {
     img: require('../../images/svg-2.svg').default,
     alt: 'credit card',
     dark: false,
-    primary: true,
+    primary: false,
     darkText: true
 };
 export const homeObjThree = {
@@ -53,12 +53,12 @@ export const homeObjFour = {
     lightTextDesc: false,
     topLine: 'Completetion of task',
     headline: 'Do I have to be home when my task is completed?',
-    description: 'You’re responsible for overseeing and directing the work of your Tasker. Multitasker does not monitor, direct, or oversee the work of Taskers, as they are independent contractors hired by Clients. If you wont be home, be sure to give your Tasker any instructions they may need to correctly complete your task. If your Tasker needs more information from you they will contact you through the chat.',
+    description: 'You’re responsible for overseeing and directing the work of your Tasker. Multitasker does not monitor, direct, or oversee the work of Taskers, as they are independent contractors hired by Clients. If you won\'t be home, be sure to give your Tasker any instructions they may need to correctly complete your task. If your Tasker needs more information from you they will contact you through the chat.',
     buttonLabel: 'Learn More',
     imgStart: true,
     img: require('../../images/svg-5.svg').default,
     alt: 'task2',
     dark: false,
-    primary: true,
+    primary: false,
     darkText: true
 };

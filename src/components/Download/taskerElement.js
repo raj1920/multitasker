@@ -82,9 +82,10 @@ line-height: 24px;
 color: ${({darkText}) => (darkText ? '#010606' : '#fff')}
 `;
 
-export const BtnWrap = styled.div `
+export const ImageWrap = styled.div `
 display: flex;
-justify-content: flex-start;
+justify-content: flex-start ;
+/* justify-content: space-between; */
 `;
 export const ImgWrap = styled.div `
 max-width: 555px;
@@ -94,4 +95,11 @@ export const Img = styled.img `
 width: 100%;
 margin: 0 0 10px 0;
 padding-right: 0;
+`;
+
+export const Icon = styled.img `
+height:50px;
+width: 150px;
+padding: 4px;
+
 `;

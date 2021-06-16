@@ -142,7 +142,7 @@ export const NavLinks = styled(LinkS)`
 
 `;
 
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled(LinkS)`
   display: flex;
   justify-content: center;
   align-items: center;

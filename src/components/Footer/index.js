@@ -1,11 +1,15 @@
 import React from 'react';
 import {animateScroll as scroll} from 'react-scroll';
+import Icon1 from "../../images/google-play.svg";
+import Icon2 from "../../images/apple-store.svg";
 import {
     FaFacebook,
     FaInstagram,
-    FaYoutube,
-    FaTwitter,
-    FaLinkedin
+    // FaYoutube,
+    // FaTwitter,
+    // FaLinkedin,
+    // FaGooglePlay,
+    // FaApple
 } from 'react-icons/fa';
 import {
     FooterConatiner,
@@ -20,7 +24,8 @@ import {
     SocialMedia,
     SocialLogo,
     SocialMediaWrap,
-    WebsiteRIghts
+    WebsiteRIghts,
+    Icon
 
 
 } from './FooterElement';
@@ -123,8 +128,17 @@ const Footer = () => {
                       <SocialLogo to= '/' onClick={toggleHome}>
                           Multitasker
                       </SocialLogo>
-                      <WebsiteRIghts>Multitasker  ©  {new Date().getFullYear()} All rights reserved </WebsiteRIghts>
-                      <SocialIcons>
+                      <WebsiteRIghts>Multitasker  ©  {new Date().getFullYear()} 
+                      All rights reserved </WebsiteRIghts>
+                    <SocialIcons>
+                      <SocialIconLink href="/" target= "_blank"
+                      aria-label="Play Store">
+                        <Icon src={Icon1}/>
+                        </SocialIconLink>
+                        <SocialIconLink href="/" target= "_blank"
+                      aria-label="Play Store">
+                        <Icon src={Icon2}/>
+                        </SocialIconLink>
                       <SocialIconLink href="/" target= "_blank"
                       aria-label="Facebook">
                         <FaFacebook/>
@@ -133,23 +147,27 @@ const Footer = () => {
                       aria-label="Instagram">
                         <FaInstagram/>
                       </SocialIconLink>
-                      <SocialIconLink href="/" target= "_blank"
+                      {/* <SocialIconLink href="/" target= "_blank"
                       aria-label="Youtube">
                         <FaYoutube/>
                       </SocialIconLink>
-                      <SocialIconLink href="/" target= "_blank"
+                       <SocialIconLink href="/" target= "_blank"
                       aria-label="Twitter">
                         <FaTwitter/>
                       </SocialIconLink>
                       <SocialIconLink href="/" target= "_blank"
                       aria-label="Linkedin">
                         <FaLinkedin/>
-                      </SocialIconLink>
-                      </SocialIcons>
+                       </SocialIconLink> */}
+                    </SocialIcons> 
+                      
                   </SocialMediaWrap>
+                  
               </SocialMedia> 
+              
             </FooterWrap> 
-        </FooterConatiner>   
+            {/* <WebsiteRIghts>Multitasker  ©  {new Date().getFullYear()} All rights reserved </WebsiteRIghts> */}
+          </FooterConatiner>   
         </>
     )
 }

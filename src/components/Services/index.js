@@ -18,23 +18,52 @@ const Services
         <>
         <ServicesContainer id ="catogeries">
             <ServicesH1>Our Services</ServicesH1>
-            <ServiceWrapper>
+            <ServiceWrapper className= 'bg-red-500'>
                 <ServicesCard>
                     <ServicesIcon src= {Icon1}/>
-                    <ServicesH2>Reduce Expenses</ServicesH2>
+                    <ServicesH2>Home & Gardening</ServicesH2>
                     <ServicesP>We help reduce fees</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src= {Icon2}/>
-                    <ServicesH2>Virtual offices</ServicesH2>
+                    <ServicesH2>Full House Removals</ServicesH2>
                     <ServicesP>We help reduce fees</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src= {Icon3}/>
-                    <ServicesH2>Premium Benifits</ServicesH2>
-                    <ServicesP>Unlock Our Special membership card
-                        that returns 5% cash back.
+                    <ServicesH2>Few Items Removals</ServicesH2>
+                    <ServicesP>Unlock Our Special membership 
                     </ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src= {Icon2}/>
+                    <ServicesH2>Furniture Assembly</ServicesH2>
+                    <ServicesP>We help reduce fees</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src= {Icon2}/>
+                    <ServicesH2>Handyperson</ServicesH2>
+                    <ServicesP>We help reduce fees</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src= {Icon2}/>
+                    <ServicesH2>Marketing</ServicesH2>
+                    <ServicesP>We help reduce fees</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src= {Icon2}/>
+                    <ServicesH2>Home Cleaning</ServicesH2>
+                    <ServicesP>We help reduce fees</ServicesP>
+                </ServicesCard>
+                {/* <ServicesCard>
+                    <ServicesIcon src= {Icon2}/>
+                    <ServicesH2>Electrician</ServicesH2>
+                    <ServicesP>We help reduce fees</ServicesP>
+                </ServicesCard> */}
+                <ServicesCard>
+                    <ServicesIcon src= {Icon2}/>
+                    <ServicesH2>Anything</ServicesH2>
+                    <ServicesP>We help reduce fees</ServicesP>
                 </ServicesCard>
             </ServiceWrapper>
         </ServicesContainer>
