@@ -22,38 +22,37 @@ const Services
                 <ServicesCard>
                     <ServicesIcon src= {Icon1}/>
                     <ServicesH2>Home & Gardening</ServicesH2>
-                    <ServicesP>We help reduce fees</ServicesP>
+                    <ServicesP></ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src= {Icon2}/>
                     <ServicesH2>Full House Removals</ServicesH2>
-                    <ServicesP>We help reduce fees</ServicesP>
+                    <ServicesP></ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src= {Icon3}/>
                     <ServicesH2>Few Items Removals</ServicesH2>
-                    <ServicesP>Unlock Our Special membership 
-                    </ServicesP>
+                    <ServicesP></ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src= {Icon2}/>
                     <ServicesH2>Furniture Assembly</ServicesH2>
-                    <ServicesP>We help reduce fees</ServicesP>
+                    <ServicesP></ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src= {Icon2}/>
                     <ServicesH2>Handyperson</ServicesH2>
-                    <ServicesP>We help reduce fees</ServicesP>
+                    <ServicesP></ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src= {Icon2}/>
                     <ServicesH2>Marketing</ServicesH2>
-                    <ServicesP>We help reduce fees</ServicesP>
+                    <ServicesP></ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src= {Icon2}/>
                     <ServicesH2>Home Cleaning</ServicesH2>
-                    <ServicesP>We help reduce fees</ServicesP>
+                    <ServicesP></ServicesP>
                 </ServicesCard>
                 {/* <ServicesCard>
                     <ServicesIcon src= {Icon2}/>
@@ -63,7 +62,7 @@ const Services
                 <ServicesCard>
                     <ServicesIcon src= {Icon2}/>
                     <ServicesH2>Anything</ServicesH2>
-                    <ServicesP>We help reduce fees</ServicesP>
+                    <ServicesP></ServicesP>
                 </ServicesCard>
             </ServiceWrapper>
         </ServicesContainer>

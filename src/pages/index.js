@@ -9,6 +9,9 @@ import Navbar from '../components/Navbar';
 import Services from '../components/Services';
 import GlobalStyle from '../globalstyle';
 
+import Cards from '../components/tasks/card';
+
+
 const Home = () => {
     return (
         <>
@@ -16,6 +19,8 @@ const Home = () => {
          <Navbar/>   
          <HeroSection/>
          <Services/>
+         {/* <AutoPlay/> */}
+         <Cards />
          <InfoSection {...homeObjOne }/>
          <InfoSection {...homeObjTwo }/>
          <InfoSection {...homeObjThree }/>
