@@ -12,7 +12,7 @@ import {
     Content,
     Price,
     Rating,
-    Icon2,
+    
     Content1
 
 } from './cardElement';
