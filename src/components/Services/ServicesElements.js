@@ -41,6 +41,12 @@ padding: 0 50px;
      
     
 }
+@media screen and (max-width: 480px){
+     grid-template-columns: auto auto  ;
+     height:1400px;
+     
+    
+}
 `;
 
 export const ServicesCard = styled.div `
@@ -75,7 +81,7 @@ font-size= 2.5rem;
 color: #7FCE06;
 margin-bottom: 64px;
 @media screen and (max-width: 480px) {
-    font-size:4rem;
+    font-size:2rem;
 }
 `;
 

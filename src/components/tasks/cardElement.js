@@ -31,7 +31,8 @@ margin-bottom: 64px;
 padding: 20px;
 text-align: center;
 @media screen and (max-width: 480px) {
-    font-size:4rem;
+    font-size:2rem;
+    height:1000px;
 }
 `;
 export const Card = styled.div `
