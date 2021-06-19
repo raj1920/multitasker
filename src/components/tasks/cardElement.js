@@ -21,7 +21,7 @@ border-bottom: 4px solid #7FCE06;
     height: 600px;
 }
 @media screen and (max-width: 480px) {
-    height: 600px;
+    height: 800px;
 }
 `;
 export const CardH1 = styled.h1 `
@@ -31,8 +31,8 @@ margin-bottom: 64px;
 padding: 20px;
 text-align: center;
 @media screen and (max-width: 480px) {
-    font-size:2rem;
-    height:1000px;
+    font-size:1.5srem;
+    
 }
 `;
 export const Card = styled.div `

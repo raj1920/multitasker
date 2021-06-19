@@ -23,7 +23,7 @@ import { HiStar } from "react-icons/hi";
 class Cards extends Component {
     render(){
         const settings = {
-            dots: true,
+            dots: false,
             
             infinite: true,
             slidesToShow: 6,
@@ -61,7 +61,7 @@ class Cards extends Component {
               ]
           };
           const setting = {
-            dots: true,
+            dots: false,
             infinite: true,
             slidesToShow: 6,
             slidesToScroll: 1,
