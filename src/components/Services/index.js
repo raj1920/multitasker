@@ -17,7 +17,7 @@ const Services
     return (
         <>
         <ServicesContainer id ="catogeries">
-            <ServicesH1>Our Services</ServicesH1>
+            <ServicesH1>What Do you need done?</ServicesH1>
             <ServiceWrapper className= 'bg-red-500'>
                 <ServicesCard>
                     <ServicesIcon src= {Icon1}/>

@@ -12,8 +12,9 @@ import {
     Content,
     Price,
     Rating,
-    
-    Content1
+    Container,
+    Content1,
+    CardH1
 
 } from './cardElement';
 import { Contents } from './Data';
@@ -23,15 +24,41 @@ class Cards extends Component {
     render(){
         const settings = {
             dots: true,
+            
             infinite: true,
             slidesToShow: 6,
             slidesToScroll: 1,
             autoplay: true,
-            speed: 1000,
-            autoplaySpeed: 1000,
+            speed: 1500,
+            autoplaySpeed: 1500,
             cssEase: "linear",
             pauseOnHover: true,
-            className: "slides"
+            responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
           };
           const setting = {
             dots: true,
@@ -39,18 +66,45 @@ class Cards extends Component {
             slidesToShow: 6,
             slidesToScroll: 1,
             autoplay: true,
-            speed: 1000,
-            autoplaySpeed: 1000,
+            speed: 1500,
+            autoplaySpeed: 1500,
             cssEase: "linear",
             pauseOnHover: true,
             className: "slides",
-            rtl:true
+            rtl:true,
+            responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
           };       
 
  
     return (
-        <>
-            <h1>Our Works</h1>
+        <>  
+        <Container id = 'task'>
+            <CardH1>See what others are getting done </CardH1>
             <Slider {...settings}>
 
               {Contents.map((details) =>{
@@ -99,6 +153,7 @@ class Cards extends Component {
               }
               )} 
            </Slider>
+        </Container>
         </>
     )
 } 

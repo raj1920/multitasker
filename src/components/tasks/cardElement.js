@@ -1,6 +1,39 @@
 
 import styled from 'styled-components';
 
+export const Container= styled.div `
+height: 600px;
+/* display: flex; */
+ /*flex-direction: column;
+justify-content: center;
+align-items: center; */
+/* background: #010606; */
+/* background: #E5E5E5; */
+background: #fff;
+padding: 10px;
+border-bottom: 4px solid #7FCE06;
+
+
+@media screen and (max-width: 768px) {
+    height: 600px;
+}
+@media screen and (max-width: 1000px) {
+    height: 600px;
+}
+@media screen and (max-width: 480px) {
+    height: 600px;
+}
+`;
+export const CardH1 = styled.h1 `
+font-size= 2.5rem;
+color: #7FCE06;
+margin-bottom: 64px;
+padding: 20px;
+text-align: center;
+@media screen and (max-width: 480px) {
+    font-size:4rem;
+}
+`;
 export const Card = styled.div `
     position: relative;
     display: inline-block;
@@ -85,6 +118,7 @@ export const Content = styled.p `
     margin: 0px;
     padding: 0px;
     display: block;
+   
     /* margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -152,7 +186,7 @@ export const Content1 = styled.p `
     font-style: initial;
     white-space: initial;
     margin: 0px;
-    padding: 0px;
+    padding-left: 5px;
     display: block;
     /* margin-block-start: 1em;
     margin-block-end: 1em;
