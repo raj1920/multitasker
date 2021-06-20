@@ -12,7 +12,8 @@ export const homeObjOne = {
     alt: 'car',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
+    data: 'fade-left'
 };
 export const homeObjTwo = {
     id: 'works',
@@ -28,7 +29,8 @@ export const homeObjTwo = {
     alt: 'credit card',
     dark: false,
     primary: false,
-    darkText: true
+    darkText: true,
+    data:'fade-right'
 };
 export const homeObjThree = {
     id: 'works',
@@ -44,7 +46,8 @@ export const homeObjThree = {
     alt: 'task',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
+    data:'fade-left'
 };
 export const homeObjFour = {
     id: 'works',
@@ -60,5 +63,6 @@ export const homeObjFour = {
     alt: 'task2',
     dark: false,
     primary: false,
-    darkText: true
+    darkText: true,
+    data:'fade-right'
 };

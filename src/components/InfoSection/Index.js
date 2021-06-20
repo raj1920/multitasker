@@ -30,7 +30,8 @@ const InfoSection = ({
     alt,
     primary,
     dark,
-    dark2
+    dark2,
+    data
    }) => {
        useEffect(() => {
            Aos.init({duration:2000,offset:400});
@@ -62,7 +63,7 @@ const InfoSection = ({
                          </TextWrapper>
                      </Column1>
                      <Column2>
-                       <ImgWrap data-aos="fade-up">
+                       <ImgWrap data-aos={data}>
                          <Img src={img} alt={alt}/>
                       </ImgWrap>
                      </Column2>
