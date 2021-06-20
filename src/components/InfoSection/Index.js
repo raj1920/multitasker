@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Button } from '../ButtonElement';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import {
     InfoConatiner,
     InfoWrapper,
@@ -30,7 +32,11 @@ const InfoSection = ({
     dark,
     dark2
    }) => {
+       useEffect(() => {
+           Aos.init({duration:2000});
+       }, []);
     return ( 
+    
     <> 
       <InfoConatiner lightBg={lightBg} id={id}>
              <InfoWrapper>
@@ -56,7 +62,7 @@ const InfoSection = ({
                          </TextWrapper>
                      </Column1>
                      <Column2>
-                       <ImgWrap>
+                       <ImgWrap data-aos="fade-up">
                          <Img src={img} alt={alt}/>
                       </ImgWrap>
                      </Column2>

@@ -1,5 +1,6 @@
-import React from 'react';
-
+import React,{useEffect} from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import {
     InfoConatiner,
     InfoWrapper,
@@ -32,9 +33,12 @@ const DownloadSection = ({
     alt2
     
    }) => {
+    useEffect(() => {
+        Aos.init({duration:2000});
+    }, []);
     return ( 
     <> 
-      <InfoConatiner lightBg={lightBg} id={id}>
+      <InfoConatiner  lightBg={lightBg} id={id}>
              <InfoWrapper>
                  <InfoRow imgStart={imgStart}>
                      <Column1>
@@ -49,7 +53,7 @@ const DownloadSection = ({
                          </TextWrapper>
                      </Column1>
                      <Column2>
-                       <ImgWrap>
+                       <ImgWrap data-aos="fade-left">
                          <Img src={img} alt={alt}/>
                       </ImgWrap>
                      </Column2>
