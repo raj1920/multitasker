@@ -33,7 +33,7 @@ const InfoSection = ({
     dark2
    }) => {
        useEffect(() => {
-           Aos.init({duration:2000});
+           Aos.init({duration:2000,offset:400});
        }, []);
     return ( 
     
@@ -44,7 +44,7 @@ const InfoSection = ({
                      <Column1>
                          <TextWrapper>
                              <TopLine>{topLine}</TopLine>
-                             <Heading lightText ={lightText}>{headline}</Heading>
+                             <Heading  lightText ={lightText}>{headline}</Heading>
                              <Subtitle darkText = {darkText}>{description}</Subtitle>
                              <BtnWrap>
                                  <Button to='home'
