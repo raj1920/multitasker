@@ -8,8 +8,8 @@ align-items: center;
 /* background: #010606; */
 background: #E5E5E5;
 padding: 10px;
-border-top: 4px solid #7FCE06;
-border-bottom: 4px solid #7FCE06;
+border-top: 2px solid #7FCE06;
+border-bottom: 2px solid #7FCE06;
 
 @media screen and (max-width: 768px) {
     height: 1000px;

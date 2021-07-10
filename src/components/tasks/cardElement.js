@@ -11,7 +11,7 @@ align-items: center; */
 /* background: #E5E5E5; */
 background: #fff;
 padding: 10px;
-border-bottom: 4px solid #7FCE06;
+border-bottom: 2px solid #7FCE06;
 
 
 @media screen and (max-width: 768px) {
